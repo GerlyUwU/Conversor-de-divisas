@@ -1,38 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<!DOCTYPE HTML>
+<html lang="es">
+
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Conversor de divisas</title>
+        <title>Conversor de Divisas (AJAX)</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <script type="text/javascript" src="js/divisas.js"></script>
+        <link rel="icon" href="/images/favicon.png" type="image/png">
     </head>
+
     <body>
+
         <header>
             <h1 id="h1_titulo"></h1>
         </header>
+
         <br><br>
+
         <div class="contenido">
             <div class="contenedormonedas">
                 <img id="img1" class="imagen_moneda">
-                <button class="bottonswitch " title="intercambiar"
-                    onclick="intercambiarTipoConversion()"></button>
+                <button class="botonswith" title="Intercambiar"
+                        onclick="intercambiarTipoConversion()"></button>
                 <img id="img2" class="imagen_moneda">
             </div>
+
             <form onsubmit="return convertir(event)">
-                <label for="txt_importe"> importe: *</label>
+                <label for="txt_importe">Importe: *</label>
                 <input class="entrada" type="number" id="txt_importe"
-                    name="txt_importe"
-                    placeholder="introduce el importe a convertir" step="any"
-                    required>
+                       placeholder="Introduce el importe e convertir" step="any" required>
                 <br>
-                <label for="txt_tasa">tasa de cambio: </label>
-                <input class="resultado" type="text" id="txt_resultado"
-                    readonly>
+                <label for="txt_tasa">Tasa de cambio:</label>
+                <input class="resultado" type="text" id="txt_tasa" readonly>
+                <br>
+                <label for="txt_resultado">Resultado:</label>
+                <input class="resultado" type="text" id="txt_resultado" readonly>
                 <br><br>
-                <input class="btn_conbertir " type="submit" value="convertir" />
+                <input class="btn_convertir" type="submit" value="Convertir"/>
             </form>
         </div>
         <footer>
-            <p> Universidad Veracruzana - Ingenieria de software</p>
+            <p>&copy; 2024 Universidad Veracruzana - Ingeniería de Software</p>
         </footer>
     </body>
+
 </html>
