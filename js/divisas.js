@@ -18,12 +18,12 @@ function actualizarImagenesMonedas() {
     var img2 = document.getElementById('img2');
     if (pesos_a_dolares) {
         titulo.innerText = "Conversor de divisas pesos mexicanos a dólares";
-        img1.src = './images/peso.png';
-        img2.src = './images/dollar.avif';
+        img1.src = '/Images/peso_mexa.png';
+        img2.src = '/images/dollar_ame.png';
     } else {
         titulo.innerText = "Conversor de divisas dólares a pesos mexicanos";
-        img1.src = './images/dollar.avif';
-        img2.src = './images/peso.png';
+        img1.src =  '/images/dollar_ame.png';
+        img2.src = '/Images/peso_mexa.png';
     }
 }
 
